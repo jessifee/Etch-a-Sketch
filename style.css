@@ -1,3 +1,4 @@
+
 h1{
     text-align: center;
     color:blanchedalmond;
@@ -7,13 +8,18 @@ h1{
 
 /*funktionier nicht, soll in die Mitte */
 .big-container{
-    width: 450px;
+    width: 100%;
     height: 450px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .container {
     display: grid;  
     width: 400px;
@@ -21,6 +27,12 @@ h1{
     border: blanchedalmond 1px solid;
 }
 
+.clear-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+}
 .black{
     background-color: black;
 }
@@ -30,14 +42,21 @@ body{
    background-size: cover;
 }
 
+#clearbtn{
+    width: 200px;
+}
+
 button{
  background-color: #4b3832;
     color: blanchedalmond;
     box-shadow: none;
     height: 40px;
-    width: 60px;
+    width: 80px;
     font-size: 20px;
     font-family: baskerville;
     border-color: blanchedalmond;
     cursor: pointer;
+    margin: 40px;
+    font-weight: bold;
 }
+

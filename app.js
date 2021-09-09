@@ -55,7 +55,8 @@ function changeColor(e) {
 clearBtn.addEventListener("click", function clear() {
   container.innerHTML = "";
   let newSize = prompt("Choose the size of your next canvas");
-  let size = parseInt(newSize); //newSize is a string, parseInt changes it to a number
+  let size= Math.min(Math.max(parseInt(newSize), 1), 100);
+  //let size = parseInt(newSize); //newSize is a string, parseInt changes it to a number
   makeGrid(size);
 });
 
